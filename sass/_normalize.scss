@@ -5,36 +5,42 @@
 // Custom Media Query Variables
 
 
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
 html {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transition: background-color 1s $ease 0;
+  transition: background-color 1s ease-in-out 0;
   margin: 0;
-  background-color: $blue-dark;
-  background-color: var(--theme-color-dark, var(--blue-dark));
+  background-color: $red;
   padding: 0;
   min-width: 320px;
   height: auto;
   max-height: auto;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  line-height: 1.33;
-  color: $gray-dark;
-  font-family: $primary-font;
-  font-size: 62.5%;
+  line-height: 1.15;
+  color: $dark-gray;
+  font-family: "system";
+  font-size: 16px;
   font-weight: 300;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -43,19 +49,18 @@ html {
 }
 
 body {
-  position: relative;
-  transition: padding .175s $ease-in 0s;
   margin: 0;
-  background-color: $gray5;
   padding: 0;
-  padding-top: 6.5rem;
+  padding-top: 3rem;
   min-width: 320px;
   height: auto;
   min-height: 100vh;
   font-family: inherit;
+}
 
-  @include breakpoint(tablet) {
-    padding-top: 8.5rem;
+@media #{$breakpoint-medium} {
+  body {
+    padding-top: 4rem;
   }
 }
 
@@ -64,54 +69,8 @@ html, *,
   box-sizing: border-box;
 }
 
-html,
-body,
-div,
-article,
-section,
-main,
-footer,
-header,
-form,
-fieldset,
-legend,
-pre,
-code,
-a,
-h1,h2,h3,h4,h5,h6,
-p,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-textarea,
-table,
-td,
-th,
-tr,
-input[type="email"],
-input[type="number"],
-input[type="password"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-.border-box {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 /* Sections
    ========================================================================== */
-
-/**
- * Remove the margin in all browsers (opinionated).
- */
-
-body {
-  margin: 0;
-}
 
 /**
  * Add the correct display in IE 9-.
@@ -124,6 +83,16 @@ header,
 nav,
 section {
   display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -165,7 +134,7 @@ hr {
  */
 
 pre {
-  font-family: 'PT Mono', monospace, monospace; /* 1 */
+  font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -183,17 +152,7 @@ a {
 }
 
 /**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
-/**
- * 1. Remove the bottom border in Firefox 39-.
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
@@ -320,8 +279,7 @@ svg:not(:root) {
    ========================================================================== */
 
 /**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
+ * Remove the margin in Firefox and Safari.
  */
 
 button,
@@ -329,10 +287,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  margin: 0;
 }
 
 /**
@@ -389,16 +344,6 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
-
-/**
- * Change the border, margin, and padding in all browsers (opinionated).
- */
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
 }
 
 /**

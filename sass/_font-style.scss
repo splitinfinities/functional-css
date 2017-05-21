@@ -20,17 +20,17 @@
 .i         { font-style: italic; }
 .fs-normal { font-style: normal; }
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .i-ns       { font-style: italic; }
   .fs-normal-ns     { font-style: normal; }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .i-m       { font-style: italic; }
   .fs-normal-m     { font-style: normal; }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .i-l       { font-style: italic; }
   .fs-normal-l     { font-style: normal; }
 }

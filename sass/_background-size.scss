@@ -25,17 +25,17 @@
   .cover { background-size: cover!important; }
   .contain { background-size: contain!important; }
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .cover-ns { background-size: cover!important; }
   .contain-ns { background-size: contain!important; }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .cover-m { background-size: cover!important; }
   .contain-m { background-size: contain!important; }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .cover-l { background-size: cover!important; }
   .contain-l { background-size: contain!important; }
 }

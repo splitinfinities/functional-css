@@ -2,14 +2,13 @@
 // Converted Variables
 
 $spacing-none: 0 !default;
-$spacing-smol: 0.4rem !default;
-$spacing-extra-small: 1rem !default;
-$spacing-small: 2rem !default;
-$spacing-medium: 3rem !default;
-$spacing-large: 4rem !default;
-$spacing-extra-large: 5rem !default;
-$spacing-extra-extra-large: 6rem !default;
-$spacing-extra-extra-extra-large: 8rem !default;
+$spacing-extra-small: .25rem !default;
+$spacing-small: .5rem !default;
+$spacing-medium: 1rem !default;
+$spacing-large: 2rem !default;
+$spacing-extra-large: 4rem !default;
+$spacing-extra-extra-large: 8rem !default;
+$spacing-extra-extra-extra-large: 16rem !default;
 
 // Custom Media Query Variables
 
@@ -53,8 +52,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
 
 
 .pa0 { padding: $spacing-none; }
-.pa025 { padding: ($spacing-smol / 2); }
-.pa05 { padding: $spacing-smol; }
 .pa1 { padding: $spacing-extra-small; }
 .pa2 { padding: $spacing-small; }
 .pa3 { padding: $spacing-medium; }
@@ -64,7 +61,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
 .pa7 { padding: $spacing-extra-extra-extra-large; }
 
 .pl0 { padding-left: $spacing-none; }
-.pl05 { padding-left: $spacing-smol; }
 .pl1 { padding-left: $spacing-extra-small; }
 .pl2 { padding-left: $spacing-small; }
 .pl3 { padding-left: $spacing-medium; }
@@ -74,7 +70,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
 .pl7 { padding-left: $spacing-extra-extra-extra-large; }
 
 .pr0 { padding-right: $spacing-none; }
-.pr05 { padding-right: $spacing-smol; }
 .pr1 { padding-right: $spacing-extra-small; }
 .pr2 { padding-right: $spacing-small; }
 .pr3 { padding-right: $spacing-medium; }
@@ -84,7 +79,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
 .pr7 { padding-right: $spacing-extra-extra-extra-large; }
 
 .pb0 { padding-bottom: $spacing-none; }
-.pb05 { padding-bottom: $spacing-smol; }
 .pb1 { padding-bottom: $spacing-extra-small; }
 .pb2 { padding-bottom: $spacing-small; }
 .pb3 { padding-bottom: $spacing-medium; }
@@ -94,7 +88,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
 .pb7 { padding-bottom: $spacing-extra-extra-extra-large; }
 
 .pt0 { padding-top: $spacing-none; }
-.pt05 { padding-top: $spacing-smol; }
 .pt1 { padding-top: $spacing-extra-small; }
 .pt2 { padding-top: $spacing-small; }
 .pt3 { padding-top: $spacing-medium; }
@@ -106,10 +99,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
 .pv0 {
   padding-top: $spacing-none;
   padding-bottom: $spacing-none;
-}
-.pv05 {
-  padding-top: $spacing-smol;
-  padding-bottom: $spacing-smol;
 }
 .pv1 {
   padding-top: $spacing-extra-small;
@@ -135,6 +124,7 @@ $spacing-extra-extra-extra-large: 8rem !default;
   padding-top: $spacing-extra-extra-large;
   padding-bottom: $spacing-extra-extra-large;
 }
+
 .pv7 {
   padding-top: $spacing-extra-extra-extra-large;
   padding-bottom: $spacing-extra-extra-extra-large;
@@ -144,42 +134,43 @@ $spacing-extra-extra-extra-large: 8rem !default;
   padding-left: $spacing-none;
   padding-right: $spacing-none;
 }
-.ph05 {
-  padding-left: $spacing-smol;
-  padding-right: $spacing-smol;
-}
+
 .ph1 {
   padding-left: $spacing-extra-small;
   padding-right: $spacing-extra-small;
 }
+
 .ph2 {
   padding-left: $spacing-small;
   padding-right: $spacing-small;
 }
+
 .ph3 {
   padding-left: $spacing-medium;
   padding-right: $spacing-medium;
 }
+
 .ph4 {
   padding-left: $spacing-large;
   padding-right: $spacing-large;
 }
+
 .ph5 {
   padding-left: $spacing-extra-large;
   padding-right: $spacing-extra-large;
 }
+
 .ph6 {
   padding-left: $spacing-extra-extra-large;
   padding-right: $spacing-extra-extra-large;
 }
+
 .ph7 {
   padding-left: $spacing-extra-extra-extra-large;
   padding-right: $spacing-extra-extra-extra-large;
 }
 
 .ma0  {  margin: $spacing-none; }
-.ma025  {  margin: ($spacing-smol / 2); }
-.ma05  {  margin: $spacing-smol; }
 .ma1 {  margin: $spacing-extra-small; }
 .ma2  {  margin: $spacing-small; }
 .ma3  {  margin: $spacing-medium; }
@@ -189,7 +180,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
 .ma7 { margin: $spacing-extra-extra-extra-large; }
 
 .ml0  {  margin-left: $spacing-none; }
-.ml05  {  margin-left: $spacing-smol; }
 .ml1 {  margin-left: $spacing-extra-small; }
 .ml2  {  margin-left: $spacing-small; }
 .ml3  {  margin-left: $spacing-medium; }
@@ -199,7 +189,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
 .ml7 { margin-left: $spacing-extra-extra-extra-large; }
 
 .mr0  {  margin-right: $spacing-none; }
-.mr05  {  margin-right: $spacing-smol; }
 .mr1 {  margin-right: $spacing-extra-small; }
 .mr2  {  margin-right: $spacing-small; }
 .mr3  {  margin-right: $spacing-medium; }
@@ -209,7 +198,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
 .mr7 { margin-right: $spacing-extra-extra-extra-large; }
 
 .mb0  {  margin-bottom: $spacing-none; }
-.mb05  {  margin-bottom: $spacing-smol; }
 .mb1 {  margin-bottom: $spacing-extra-small; }
 .mb2  {  margin-bottom: $spacing-small; }
 .mb3  {  margin-bottom: $spacing-medium; }
@@ -219,7 +207,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
 .mb7 { margin-bottom: $spacing-extra-extra-extra-large; }
 
 .mt0  {  margin-top: $spacing-none; }
-.mt05  {  margin-top: $spacing-smol; }
 .mt1 {  margin-top: $spacing-extra-small; }
 .mt2  {  margin-top: $spacing-small; }
 .mt3  {  margin-top: $spacing-medium; }
@@ -231,10 +218,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
 .mv0   {
   margin-top: $spacing-none;
   margin-bottom: $spacing-none;
-}
-.mv05   {
-  margin-top: $spacing-smol;
-  margin-bottom: $spacing-smol;
 }
 .mv1  {
   margin-top: $spacing-extra-small;
@@ -269,10 +252,6 @@ $spacing-extra-extra-extra-large: 8rem !default;
   margin-left: $spacing-none;
   margin-right: $spacing-none;
 }
-.mh05   {
-  margin-left: $spacing-smol;
-  margin-right: $spacing-smol;
-}
 .mh1   {
   margin-left: $spacing-extra-small;
   margin-right: $spacing-extra-small;
@@ -302,7 +281,7 @@ $spacing-extra-extra-extra-large: 8rem !default;
   margin-right: $spacing-extra-extra-extra-large;
 }
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .pa0-ns  {  padding: $spacing-none; }
   .pa1-ns {  padding: $spacing-extra-small; }
   .pa2-ns  {  padding: $spacing-small; }
@@ -526,7 +505,7 @@ $spacing-extra-extra-extra-large: 8rem !default;
 
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .pa0-m  {  padding: $spacing-none; }
   .pa1-m {  padding: $spacing-extra-small; }
   .pa2-m  {  padding: $spacing-small; }
@@ -751,7 +730,7 @@ $spacing-extra-extra-extra-large: 8rem !default;
 
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .pa0-l  {  padding: $spacing-none; }
   .pa1-l {  padding: $spacing-extra-small; }
   .pa2-l  {  padding: $spacing-small; }

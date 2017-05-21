@@ -20,9 +20,9 @@
     it    = inline-table
     t     = table
     tc    = table-cell
-    tr    = table-row
-    tcol  = table-column
-    tcolg = table-column-group
+    t-row          = table-row
+    t-columm       = table-column
+    t-column-group = table-column-group
 
    Media Query Extensions:
      -ns = not-small
@@ -52,7 +52,7 @@
   width: 100%;
 }
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .dn-ns {              display: none; }
   .di-ns {              display: inline; }
   .db-ns {              display: block; }
@@ -71,7 +71,7 @@
   }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .dn-m {              display: none; }
   .di-m {              display: inline; }
   .db-m {              display: block; }
@@ -90,7 +90,7 @@
   }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .dn-l {              display: none; }
   .di-l {              display: inline; }
   .db-l {              display: block; }

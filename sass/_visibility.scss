@@ -29,7 +29,7 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .clip-ns {
     position: fixed !important;
     _position: absolute !important;
@@ -38,7 +38,7 @@
   }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .clip-m {
     position: fixed !important;
     _position: absolute !important;
@@ -47,7 +47,7 @@
   }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .clip-l {
     position: fixed !important;
     _position: absolute !important;

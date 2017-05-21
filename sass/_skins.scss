@@ -11,226 +11,133 @@
    Docs: http://tachyons.io/docs/themes/skins/
 
    Classes for setting foreground and background colors on elements.
-   If you haven't declared a border color, but set border on an element, it will
-   be set to the current text color.
+   If you haven't declared a border color, but set border on an element, it will 
+   be set to the current text color. 
 
 */
 
 /* Text colors */
 
+.black-90 {         color: $black-90; }
+.black-80 {         color: $black-80; }
+.black-70 {         color: $black-70; }
+.black-60 {         color: $black-60; }
+.black-50 {         color: $black-50; }
+.black-40 {         color: $black-40; }
+.black-30 {         color: $black-30; }
+.black-20 {         color: $black-20; }
+.black-10 {         color: $black-10; }
+.black-05 {         color: $black-05; }
 
-// White
-.white { color: $white; }
-.transparent { color: transparent; }
-.current { color: currentColor; }
+.white-90 {         color: $white-90; }
+.white-80 {         color: $white-80; }
+.white-70 {         color: $white-70; }
+.white-60 {         color: $white-60; }
+.white-50 {         color: $white-50; }
+.white-40 {         color: $white-40; }
+.white-30 {         color: $white-30; }
+.white-20 {         color: $white-20; }
+.white-10 {         color: $white-10; }
 
-// Gray
-.gray { color: $gray; }
-.gray-dark { color: $gray-dark; }
-.gray-dark50 { color: $gray-dark50; }
-.gray75 { color: $gray75; }
-.gray25 { color: $gray25; }
-.gray15 { color: $gray15; }
-.gray5 { color: $gray5; }
-.gray2 { color: $gray2; }
+.black {         color: $black; }
+.near-black {    color: $near-black; }
+.dark-gray {     color: $dark-gray; }
+.mid-gray {      color: $mid-gray; }
+.gray {          color: $gray; }
+.silver  {       color: $silver; }
+.light-silver {  color: $light-silver; }
+.moon-gray {     color: $moon-gray; }
+.light-gray {    color: $light-gray; }
+.near-white {    color: $near-white; }
+.white {         color: $white; }
 
-// Blue
-.blue { color: $blue; }
-.blue-dark { color: $blue-dark; }
-.blue-dark50 { color: $blue-dark50; }
-.blue75 { color: $blue75; }
-.blue25 { color: $blue25; }
-.blue5 { color: $blue5; }
-
-// Green
-.green { color: $green; }
-.green-dark { color: $green-dark; }
-.green-dark50 { color: $green-dark50; }
-.green75 { color: $green75; }
-.green25 { color: $green25; }
-.green2 { color: $green2; }
-
-// Yellow
-.yellow { color: $yellow; }
-.yellow-dark { color: $yellow-dark; }
-.yellow-dark50 { color: $yellow-dark50; }
-.yellow75 { color: $yellow75; }
-.yellow25 { color: $yellow25; }
-
-// Orange
-.orange { color: $orange; }
-.orange-dark { color: $orange-dark; }
-.orange-dark50 { color: $orange-dark50; }
-.orange75 { color: $orange75; }
-.orange25 { color: $orange25; }
-
-// Red
+.dark-red { color: $dark-red; }
 .red { color: $red; }
-.red-dark { color: $red-dark; }
-.red-dark50 { color: $red-dark50; }
-.red75 { color: $red75; }
-.red25 { color: $red25; }
-
-// Pink
-.pink { color: $pink; }
-.pink-dark { color: $pink-dark; }
-.pink-dark50 { color: $pink-dark50; }
-.pink75 { color: $pink75; }
-.pink25 { color: $pink25; }
-
-// Purple
+.light-red { color: $light-red; }
+.orange { color: $orange; }
+.gold { color: $gold; }
+.yellow { color: $yellow; }
+.light-yellow { color: $light-yellow; }
 .purple { color: $purple; }
-.purple-dark { color: $purple-dark; }
-.purple-dark50 { color: $purple-dark50; }
-.purple75 { color: $purple75; }
-.purple25 { color: $purple25; }
+.light-purple { color: $light-purple; }
+.dark-pink { color: $dark-pink; }
+.hot-pink { color: $hot-pink; }
+.pink { color: $pink; }
+.light-pink { color: $light-pink; }
+.dark-green { color: $dark-green; }
+.green { color: $green; }
+.light-green { color: $light-green; }
+.navy { color: $navy; }
+.dark-blue { color: $dark-blue; }
+.blue { color: $blue; }
+.light-blue { color: $light-blue; }
+.lightest-blue { color: $lightest-blue; }
+.washed-blue { color: $washed-blue; }
+.washed-green { color: $washed-green; }
+.washed-yellow { color: $washed-yellow; }
+.washed-red { color: $washed-red; }
+.color-inherit { color: inherit; }
+
+.bg-black-90 {         background-color: $black-90; }
+.bg-black-80 {         background-color: $black-80; }
+.bg-black-70 {         background-color: $black-70; }
+.bg-black-60 {         background-color: $black-60; }
+.bg-black-50 {         background-color: $black-50; }
+.bg-black-40 {         background-color: $black-40; }
+.bg-black-30 {         background-color: $black-30; }
+.bg-black-20 {         background-color: $black-20; }
+.bg-black-10 {         background-color: $black-10; }
+.bg-black-05 {         background-color: $black-05; }
+.bg-white-90 {        background-color: $white-90; }
+.bg-white-80 {        background-color: $white-80; }
+.bg-white-70 {        background-color: $white-70; }
+.bg-white-60 {        background-color: $white-60; }
+.bg-white-50 {        background-color: $white-50; }
+.bg-white-40 {        background-color: $white-40; }
+.bg-white-30 {        background-color: $white-30; }
+.bg-white-20 {        background-color: $white-20; }
+.bg-white-10 {        background-color: $white-10; }
+
 
 
 /* Background colors */
 
-// White
-.bg-white { background-color: $white; }
-.bg-transparent { background-color: transparent; }
+.bg-black {         background-color: $black; }
+.bg-near-black {    background-color: $near-black; }
+.bg-dark-gray {     background-color: $dark-gray; }
+.bg-mid-gray {      background-color: $mid-gray; }
+.bg-gray {          background-color: $gray; }
+.bg-silver  {       background-color: $silver; }
+.bg-light-silver {  background-color: $light-silver; }
+.bg-moon-gray {     background-color: $moon-gray; }
+.bg-light-gray {    background-color: $light-gray; }
+.bg-near-white {    background-color: $near-white; }
+.bg-white {         background-color: $white; }
+.bg-transparent {   background-color: $transparent; }
 
-// Gray
-.bg-gray { background-color: $gray; }
-.bg-gray-dark { background-color: $gray-dark; }
-.bg-gray-dark50 { background-color: $gray-dark50; }
-.bg-gray75 { background-color: $gray75; }
-.bg-gray25 { background-color: $gray25; }
-.bg-gray15 { background-color: $gray15; }
-.bg-gray5 { background-color: $gray5; }
-.bg-gray2 { background-color: $gray2; }
-
-// Blue
-.bg-blue { background-color: $blue; }
-.bg-blue-dark { background-color: $blue-dark; }
-.bg-blue-dark50 { background-color: $blue-dark50; }
-.bg-blue75 { background-color: $blue75; }
-.bg-blue25 { background-color: $blue25; }
-.bg-blue5 { background-color: $blue5; }
-
-// Green
-.bg-green { background-color: $green; }
-.bg-green-dark { background-color: $green-dark; }
-.bg-green-dark50 { background-color: $green-dark50; }
-.bg-green75 { background-color: $green75; }
-.bg-green25 { background-color: $green25; }
-.bg-green2 { background-color: $green2; }
-
-// Yellow
-.bg-yellow { background-color: $yellow; }
-.bg-yellow-dark { background-color: $yellow-dark; }
-.bg-yellow-dark50 { background-color: $yellow-dark50; }
-.bg-yellow75 { background-color: $yellow75; }
-.bg-yellow25 { background-color: $yellow25; }
-
-// Orange
-.bg-orange { background-color: $orange; }
-.bg-orange-dark { background-color: $orange-dark; }
-.bg-orange-dark50 { background-color: $orange-dark50; }
-.bg-orange75 { background-color: $orange75; }
-.bg-orange25 { background-color: $orange25; }
-
-// Red
+.bg-dark-red { background-color: $dark-red; }
 .bg-red { background-color: $red; }
-.bg-red-dark { background-color: $red-dark; }
-.bg-red-dark50 { background-color: $red-dark50; }
-.bg-red75 { background-color: $red75; }
-.bg-red25 { background-color: $red25; }
-
-// Pink
-.bg-pink { background-color: $pink; }
-.bg-pink-dark { background-color: $pink-dark; }
-.bg-pink-dark50 { background-color: $pink-dark50; }
-.bg-pink75 { background-color: $pink75; }
-.bg-pink25 { background-color: $pink25; }
-
-// Purple
+.bg-light-red { background-color: $light-red; }
+.bg-orange { background-color: $orange; }
+.bg-gold { background-color: $gold; }
+.bg-yellow { background-color: $yellow; }
+.bg-light-yellow { background-color: $light-yellow; }
 .bg-purple { background-color: $purple; }
-.bg-purple-dark { background-color: $purple-dark; }
-.bg-purple-dark50 { background-color: $purple-dark50; }
-.bg-purple75 { background-color: $purple75; }
-.bg-purple25 { background-color: $purple25; }
-
-
-/* Striped Background colors */
-.bg-s-white { @include stripes(); }
-.bg-s-red { @include stripes($red, mix($red, $white, 95%)); }
-.bg-s-orange { @include stripes($orange, mix($orange, $white, 95%)); }
-.bg-s-yellow { @include stripes($yellow, #f1d330); }
-.bg-s-green { @include stripes($green, mix($green, $white, 95%)); }
-.bg-s-blue { @include stripes($blue, mix($blue, $white, 95%)); }
-.bg-s-purple { @include stripes($purple, mix($purple, $white, 95%)); }
-.bg-s-pink { @include stripes($pink, mix($pink, $white, 95%)); }
-.bg-s-gray { @include stripes($gray, mix($gray, $white, 95%)); }
-.bg-s-gray2 { @include stripes($gray2, mix($gray2, $white, 90%)); }
-
-
-/* Fills */
-
-// White
-.fill-white { fill: $white; }
-.fill-transparent { fill: transparent; }
-.fill-current { fill: currentColor; }
-
-// Gray
-.fill-gray { fill: $gray; }
-.fill-gray-dark { fill: $gray-dark; }
-.fill-gray-dark50 { fill: $gray-dark50; }
-.fill-gray75 { fill: $gray75; }
-.fill-gray25 { fill: $gray25; }
-.fill-gray15 { fill: $gray15; }
-.fill-gray5 { fill: $gray5; }
-.fill-gray2 { fill: $gray2; }
-
-// Blue
-.fill-blue { fill: $blue; }
-.fill-blue-dark { fill: $blue-dark; }
-.fill-blue-dark50 { fill: $blue-dark50; }
-.fill-blue75 { fill: $blue75; }
-.fill-blue25 { fill: $blue25; }
-.fill-blue5 { fill: $blue5; }
-
-// Green
-.fill-green { fill: $green; }
-.fill-green-dark { fill: $green-dark; }
-.fill-green-dark50 { fill: $green-dark50; }
-.fill-green75 { fill: $green75; }
-.fill-green25 { fill: $green25; }
-.fill-green2 { fill: $green2; }
-
-// Yellow
-.fill-yellow { fill: $yellow; }
-.fill-yellow-dark { fill: $yellow-dark; }
-.fill-yellow-dark50 { fill: $yellow-dark50; }
-.fill-yellow75 { fill: $yellow75; }
-.fill-yellow25 { fill: $yellow25; }
-
-// Orange
-.fill-orange { fill: $orange; }
-.fill-orange-dark { fill: $orange-dark; }
-.fill-orange-dark50 { fill: $orange-dark50; }
-.fill-orange75 { fill: $orange75; }
-.fill-orange25 { fill: $orange25; }
-
-// Red
-.fill-red { fill: $red; }
-.fill-red-dark { fill: $red-dark; }
-.fill-red-dark50 { fill: $red-dark50; }
-.fill-red75 { fill: $red75; }
-.fill-red25 { fill: $red25; }
-
-// Pink
-.fill-pink { fill: $pink; }
-.fill-pink-dark { fill: $pink-dark; }
-.fill-pink-dark50 { fill: $pink-dark50; }
-.fill-pink75 { fill: $pink75; }
-.fill-pink25 { fill: $pink25; }
-
-// Purple
-.fill-purple { fill: $purple; }
-.fill-purple-dark { fill: $purple-dark; }
-.fill-purple-dark50 { fill: $purple-dark50; }
-.fill-purple75 { fill: $purple75; }
-.fill-purple25 { fill: $purple25; }
+.bg-light-purple { background-color: $light-purple; }
+.bg-dark-pink { background-color: $dark-pink; }
+.bg-hot-pink { background-color: $hot-pink; }
+.bg-pink { background-color: $pink; }
+.bg-light-pink { background-color: $light-pink; }
+.bg-dark-green { background-color: $dark-green; }
+.bg-green { background-color: $green; }
+.bg-light-green { background-color: $light-green; }
+.bg-navy { background-color: $navy; }
+.bg-dark-blue { background-color: $dark-blue; }
+.bg-blue { background-color: $blue; }
+.bg-light-blue { background-color: $light-blue; }
+.bg-lightest-blue { background-color: $lightest-blue; }
+.bg-washed-blue { background-color: $washed-blue; }
+.bg-washed-green { background-color: $washed-green; }
+.bg-washed-yellow { background-color: $washed-yellow; }
+.bg-washed-red { background-color: $washed-red; }
+.bg-inherit { background-color: inherit; }

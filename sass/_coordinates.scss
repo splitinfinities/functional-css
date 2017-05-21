@@ -57,7 +57,6 @@
 .bottom--2 { bottom: -2rem; }
 .left--2   { left:   -2rem; }
 
-.abs-c-vert { top: 50%; bottom: 50%; transform: translateY(-50%); }
 
 .absolute--fill {
   top: 0;
@@ -66,7 +65,13 @@
   left: 0;
 }
 
-@include min-width(medium_phone) {
+.absolute--center {
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+
+@media #{$breakpoint-not-small} {
   .top-0-ns     { top:   0; }
   .left-0-ns    { left:  0; }
   .right-0-ns   { right: 0; }
@@ -93,9 +98,14 @@
     bottom: 0;
     left: 0;
   }
+  .absolute--center-ns {
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+  }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .top-0-m     { top:   0; }
   .left-0-m    { left:  0; }
   .right-0-m   { right: 0; }
@@ -122,9 +132,14 @@
     bottom: 0;
     left: 0;
   }
+  .absolute--center-m {
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+  }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .top-0-l     { top:   0; }
   .left-0-l    { left:  0; }
   .right-0-l   { right: 0; }
@@ -150,5 +165,10 @@
     right: 0;
     bottom: 0;
     left: 0;
+  }
+  .absolute--center-l {
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
   }
 }

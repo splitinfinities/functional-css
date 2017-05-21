@@ -33,21 +33,21 @@
 .b--solid {  border-style: solid; }
 .b--none {   border-style: none; }
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .b--dotted-ns { border-style: dotted; }
   .b--dashed-ns { border-style: dashed; }
   .b--solid-ns {  border-style: solid; }
   .b--none-ns {   border-style: none; }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .b--dotted-m { border-style: dotted; }
   .b--dashed-m { border-style: dashed; }
   .b--solid-m {  border-style: solid; }
   .b--none-m {   border-style: none; }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .b--dotted-l { border-style: dotted; }
   .b--dashed-l { border-style: dashed; }
   .b--solid-l {  border-style: solid; }
