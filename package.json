@@ -2,13 +2,14 @@
   "name": "@splitinfinities/functional-css",
   "version": "1.0.0",
   "description": "Provides style='functional-css' and functional.css",
+  "private": false,
   "scripts": {
     "build": "rimraf css && webpack --display-exclude --display-chunks && rimraf css/*.js css/*.js.map",
     "shipit": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/splitinfinities/functional-css.git"
+    "url": "git+https://github.com/splitinfinities/functional-css.git"
   },
   "keywords": [],
   "author": "William M. Riley",
@@ -30,5 +31,6 @@
     "postcss-loader": "^1.3.3",
     "file-loader": "^0.11.1",
     "url-loader": "^0.5.8"
-  }
+  },
+  "main": "webpack.config.js"
 }
