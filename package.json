@@ -1,6 +1,6 @@
 {
   "name": "@splitinfinities/functional-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Provides style='functional-css' and functional.css",
   "private": false,
   "scripts": {
