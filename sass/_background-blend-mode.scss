@@ -1,0 +1,95 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+
+    BACKGROUND POSITION
+
+    Base:
+    bg-b = background-blend
+
+    Modifiers:
+    -center = center center
+    -top = top center
+    -right = center right
+    -bottom = bottom center
+    -left = center left
+
+    Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+ */
+
+.bg-b-color {
+	background-blend-mode: color;
+}
+
+.bg-b-color-burn {
+	background-blend-mode: color-burn;
+}
+
+.bg-b-color-dodge {
+	background-blend-mode: color-dodge;
+}
+
+.bg-b-darken {
+	background-blend-mode: darken;
+}
+
+.bg-b-difference {
+	background-blend-mode: difference;
+}
+
+.bg-b-exclusion {
+	background-blend-mode: exclusion;
+}
+
+.bg-b-hard-light {
+	background-blend-mode: hard-light;
+}
+
+.bg-b-hue {
+	background-blend-mode: hue;
+}
+
+.bg-b-lighten {
+	background-blend-mode: lighten;
+}
+
+.bg-b-luminosity {
+	background-blend-mode: luminosity;
+}
+
+.bg-b-multiply {
+	background-blend-mode: multiply;
+}
+
+.bg-b-normal {
+	background-blend-mode: normal;
+}
+
+.bg-b-overlay {
+	background-blend-mode: overlay;
+}
+
+.bg-b-saturation {
+	background-blend-mode: saturation;
+}
+
+.bg-b-screen {
+	background-blend-mode: screen;
+}
+
+.bg-b-softlight {
+	background-blend-mode: softlight;
+}
+
+.bg-b-unset {
+	background-blend-mode: unset;
+}

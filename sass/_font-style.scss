@@ -1,0 +1,36 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+
+   FONT STYLE
+   Docs: http://tachyons.io/docs/typography/font-style/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+.i         { font-style: italic; }
+.fs-normal { font-style: normal; }
+
+@include min-width(medium_phone) {
+  .i-ns       { font-style: italic; }
+  .fs-normal-ns     { font-style: normal; }
+}
+
+@include min-width(medium_tablet) {
+  .i-m       { font-style: italic; }
+  .fs-normal-m     { font-style: normal; }
+}
+
+@include min-width(desktop) {
+  .i-l       { font-style: italic; }
+  .fs-normal-l     { font-style: normal; }
+}

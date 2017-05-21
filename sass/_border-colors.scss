@@ -1,0 +1,94 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+
+   BORDER COLORS
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Border colors can be used to extend the base
+   border classes ba,bt,bb,br,bl found in the _borders.css file.
+
+   The base border class by default will set the color of the border
+   to that of the current text color. These classes are for the cases
+   where you desire for the text and border colors to be different.
+
+   Base:
+     b = border
+
+   Modifiers:
+   --color-name = each color variable name is also a border color name
+
+*/
+
+
+
+// White
+.b--white { border-color: $white; }
+
+// Gray
+.b--gray { border-color: $gray; }
+.b--gray-dark { border-color: $gray-dark; }
+.b--gray-dark50 { border-color: $gray-dark50; }
+.b--gray75 { border-color: $gray75; }
+.b--gray25 { border-color: $gray25; }
+.b--gray15 { border-color: $gray15; }
+.b--gray5 { border-color: $gray5; }
+.b--gray2 { border-color: $gray2; }
+
+// Blue
+.b--blue { border-color: $blue; }
+.b--blue-dark { border-color: $blue-dark; }
+.b--blue-dark50 { border-color: $blue-dark50; }
+.b--blue75 { border-color: $blue75; }
+.b--blue25 { border-color: $blue25; }
+.b--blue5 { border-color: $blue5; }
+
+// Green
+.b--green { border-color: $green; }
+.b--green-dark { border-color: $green-dark; }
+.b--green-dark50 { border-color: $green-dark50; }
+.b--green75 { border-color: $green75; }
+.b--green25 { border-color: $green25; }
+.b--green2 { border-color: $green2; }
+
+// Yellow
+.b--yellow { border-color: $yellow; }
+.b--yellow-dark { border-color: $yellow-dark; }
+.b--yellow-dark50 { border-color: $yellow-dark50; }
+.b--yellow75 { border-color: $yellow75; }
+.b--yellow25 { border-color: $yellow25; }
+
+// Orange
+.b--orange { border-color: $orange; }
+.b--orange-dark { border-color: $orange-dark; }
+.b--orange-dark50 { border-color: $orange-dark50; }
+.b--orange-75 { border-color: $orange75; }
+.b--orange-25 { border-color: $orange25; }
+
+// Red
+.b--red { border-color: $red; }
+.b--red-dark { border-color: $red-dark; }
+.b--red-dark50 { border-color: $red-dark50; }
+.b--red75 { border-color: $red75; }
+.b--red25 { border-color: $red25; }
+
+// Pink
+.b--pink { border-color: $pink; }
+.b--pink-dark { border-color: $pink-dark; }
+.b--pink-dark50 { border-color: $pink-dark50; }
+.b--pink75 { border-color: $pink75; }
+.b--pink25 { border-color: $pink25; }
+
+// Purple
+.b--purple { border-color: $purple; }
+.b--purple-dark { border-color: $purple-dark; }
+.b--purple-dark50 { border-color: $purple-dark50; }
+.b--purple75 { border-color: $purple75; }
+.b--purple25 { border-color: $purple25; }
+
+.b--transparent { border-color: $transparent; }

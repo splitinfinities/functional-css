@@ -1,0 +1,132 @@
+/*  ==========================================================================
+	Variables
+============================================================================ */
+
+/* Responsive tools
+----------------------------------- */
+$breakpoints: (
+	small_phone: 320,
+	medium_phone: 367,
+	large_phone: 414,
+	small_tablet: 568,
+	medium_tablet: 675,
+	tablet: 768,
+	large_tablet: 896,
+	desktop: 1024,
+	large_desktop: 1200,
+	max_width: 1340,
+	fluid: (1340 * .825)
+);
+
+$max-width: 1240px;
+$nav-mobile-height: 6.5rem;
+$nav-height: 8.5rem;
+$mobile-nav-break: 769px;
+$notice-height: 5rem;
+
+/* Layout max sizes
+----------------------------------- */
+$layout-xsmall: 32rem;
+$layout-small: 73.4rem;
+$layout-medium: 102.4rem;
+$layout-large: 118.5rem;
+$layout-max: 134rem;
+
+
+/* Radius on elements
+----------------------------------- */
+$border-radius: 0.4rem;
+$border-radius-large: 0.8rem;
+
+
+/* Animation easing
+----------------------------------- */
+$ease: ease;
+$ease-in: ease-in;
+
+
+/* Fonts
+----------------------------------- */
+// Example:
+// $custom-font: 'Custom Font Name', sans-serif;
+
+
+$primary-font: var(--font-primary), "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$secondary-font: var(--font-secondary), "Sanchez", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+
+// Replace the 'inherit' value with the proper font variables from directly above
+$body-font: $primary-font;
+$heading-font: $secondary-font;
+$button-font: $primary-font;
+$nav-font: $primary-font;
+
+
+/* Colors
+----------------------------------- */
+
+// Transparent
+$transparent: transparent !default;
+
+// White
+$white: #fff !default;
+
+// Gray
+$gray: #5d5e5e !default;
+$gray-dark: #262727 !default;
+$gray-dark50: #434344 !default;
+$gray75: #9f9c9c !default;
+$gray25: #c7c4c4 !default;
+$gray15: #e7e7e7 !default;
+$gray5: #f7f6f6 !default;
+$gray2: #fafafa !default;
+
+// Blue
+$blue: #50c6db !default;
+$blue-dark: #01516e !default;
+$blue-dark50: #338199 !default;
+$blue75: #b0e0ea !default;
+$blue25: #d6eef2 !default;
+$blue5: #8fd6e3 !default;
+
+// Green
+$green: #51bb7b !default;
+$green-dark: #267048 !default;
+$green-dark50: #419564 !default;
+$green75: #add9b8 !default;
+$green25: #d4ead9 !default;
+$green2: #f4faf7 !default;
+
+// Yellow
+$yellow: #f0ce15 !default;
+$yellow-dark: #9a7700 !default;
+$yellow-dark50: #c3a028 !default;
+$yellow75: #f6e299 !default;
+$yellow25: #f9edc9 !default;
+
+// Orange
+$orange: #f47820 !default;
+$orange-dark: #8e4402 !default;
+$orange-dark50: #bb5f23 !default;
+$orange75: #fab889 !default;
+$orange25: #fdd9be !default;
+
+// Red
+$red: #ef4e65 !default;
+$red-dark: #8c2738 !default;
+$red-dark50: #ba3e51 !default;
+$red75: #f18085 !default;
+$red25: #fad1cd !default;
+
+// Pink
+$pink: #e0368c !default;
+$pink-dark: #851252 !default;
+$pink-dark50: #af2a6f !default;
+$pink75: #eba0c0 !default;
+$pink25: #f3cddd !default;
+
+// Purple
+$purple: #8351a0 !default;
+$purple-dark: #4e2760 !default;
+$purple-dark50: #693f7e !default;
+$purple75: #b69cc8 !default;
+$purple25: #b69cc8 !default;

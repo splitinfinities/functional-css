@@ -1,0 +1,245 @@
+/*	-------------------------------------
+	:: Font Sizing
+	---------------------------------- */
+
+	// Strip Values
+	@function strip-unit($num) {
+		@return $num / ($num * 0 + 1);
+	}
+
+	// Create Header Baselines
+	@mixin h1() {
+		font: normal 500 4.2rem / 1.142857143 $body_font;
+		letter-spacing: 0.02em;
+		color: $gray-dark;
+		max-width: 84.2rem;
+
+		.hero &,
+		.dark &,
+		.feature & {
+			color: $white;
+		}
+
+		small {
+			font: normal 400 1.8rem / 1.8 inherit;
+			color: $gray-dark;
+			letter-spacing: 0.02em;
+			margin: 0;
+		}
+	}
+
+	@mixin h2() {
+		font: normal 400 2.4rem / 1.333333333 $body_font;
+		letter-spacing: 0.04em;
+		margin: 0 0 0.8em 0;
+		color: $gray-dark;
+		max-width: 84.2rem;
+	}
+
+	@mixin h3() {
+		font: italic 400 2.4rem / 1.333333333 $heading_font;
+		margin: 0 0 0.8em 0;
+		color: $gray;
+		max-width: 84.2rem;
+	}
+
+	@mixin h4() {
+		font: normal 400 1.8rem / 1.333333333 $body_font;
+		letter-spacing: 0.02em;
+		margin: 0 0 10px 0;
+		color: $gray-dark;
+		max-width: 62.4rem;
+	}
+
+	@mixin h5() {
+		font: italic 400 2.4rem / 1.333333333 $heading_font;
+		letter-spacing: 0.04em;
+		margin: 0 0 0.8em 0;
+		color: $gray;
+		max-width: 84.2rem;
+	}
+
+	@mixin h6() {
+		font: normal 900 1.4rem $primary-font;
+		text-transform: uppercase;
+		letter-spacing: 0.16em;
+		margin: 0 0 0.8em 0;
+		color: $gray-dark;
+	}
+
+/*	-------------------------------------
+	:: Move away from using extend
+	---------------------------------- */
+	@mixin unstyled() {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	@mixin inline() {
+		&  > li {
+			display: inline-block;
+			padding-right: 5px;
+			padding-left: 5px;
+
+			&:first-of-type { padding-left: 0; }
+			&:last-of-type  { padding-right: 0; }
+		}
+	}
+
+	@mixin group() {
+		zoom: 1;
+		&::before,
+		&::after {
+			content: "";
+			display: table;
+			width: 0;
+		}
+		&::after { clear: both; }
+	}
+
+	@mixin momentum_scrolling() {
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	// Makes state selector
+	// Outputs a partial attribute selector
+	@mixin state($class, $parent: nil) {
+		@if $parent != nil {
+			#{$parent}[class*="--#{$class}"] & {
+				@content;
+			}
+		} @else {
+			&[class*='--#{$class}'] {
+				@content;
+			}
+		}
+	}
+
+
+/*	-------------------------------------
+	:: Responsive
+	---------------------------------- */
+
+	// Mobile First Query
+	// Example: @include min-width(60em) { name: value }
+	@mixin breakpoint($breakpoint) {
+		@if map-has-key($breakpoints, $breakpoint) {
+			@media (min-width: #{map-get($breakpoints, $breakpoint)}px) {
+				@content;
+			}
+		} @else {
+			@media (min-width: $breakpoint) {
+				@content;
+			}
+		}
+	}
+
+	@mixin min-width($breakpoint) {
+		@include breakpoint($breakpoint) {
+			@content;
+		};
+	}
+
+	// Desktop First Query
+	// Example: @include max-width(60em) { name: value }
+	@mixin max-width($breakpoint) {
+		@if map-has-key($breakpoints, $breakpoint) {
+			@media (max-width: #{map-get($breakpoints, $breakpoint)}px) {
+				@content;
+			}
+		} @else {
+			@media (max-width: $breakpoint) {
+				@content;
+			}
+		}
+	}
+
+	// Between Mobile and Desktop size query
+	// Example: @include between(40em, 60em) { name: value }
+	@mixin between($breakpoint_floor, $breakpoint_ceiling) {
+		@if map-has-key($breakpoints, $breakpoint_ceiling) and map-has-key($breakpoints, $breakpoint_floor) {
+			@media (max-width: #{map-get($breakpoints, $breakpoint_ceiling)}px) and (min-width: #{map-get($breakpoints, $breakpoint_floor)}px) {
+				@content;
+			}
+		} @else {
+			@media (max-width: $breakpoint_ceiling) and (min-width: $breakpoint_floor) {
+				@content;
+			}
+		}
+	}
+
+/*	-------------------------------------
+	:: Firefox mixin
+	---------------------------------- */
+	@mixin firefox() {
+		@-moz-document url-prefix() {
+			@content;
+		}
+	}
+
+
+/*	-------------------------------------
+	:: Safari mixin
+	---------------------------------- */
+	@mixin safari() {
+		@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+			@content;
+		}
+	}
+
+
+/*	-------------------------------------
+	:: Retina mixin
+	---------------------------------- */
+	@mixin retina() {
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+			@content;
+		}
+	}
+
+
+/*	-------------------------------------
+	:: REM Fallback
+	---------------------------------- */
+	@mixin rem-fallback($property, $values...) {
+		$max: length($values);
+		$pxValues: '';
+		$remValues: '';
+
+		@for $i from 1 through $max {
+			$value: strip-unit(nth($values, $i));
+			$pxValues: #{$pxValues + $value*16}px;
+
+			@if $i < $max {
+				$pxValues: #{$pxValues + " "};
+			}
+		}
+
+		@for $i from 1 through $max {
+			$value: strip-unit(nth($values, $i));
+			$remValues: #{$remValues + $value}rem;
+
+			@if $i < $max {
+				$remValues: #{$remValues + " "};
+			}
+		}
+
+		#{$property}: $pxValues;
+		#{$property}: $remValues;
+	}
+
+
+/*	-------------------------------------
+	:: Stripes
+	---------------------------------- */
+@mixin stripes($color1: $white, $color2: $gray2) {
+	background: repeating-linear-gradient(
+		-65deg,
+		$color1,
+		$color1 2rem,
+		$color2 2rem,
+		$color2 4rem
+	) !important;
+}

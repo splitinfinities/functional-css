@@ -1,0 +1,131 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+
+   HEIGHTS
+   Docs: http://tachyons.io/docs/layout/heights/
+
+   Base:
+     he = height
+     min-he = min-height
+     min-vh = min-height vertical screen height
+     vh = vertical screen height
+
+   Modifiers
+     1 = 1st step in height scale
+     2 = 2nd step in height scale
+     3 = 3rd step in height scale
+     4 = 4th step in height scale
+     5 = 5th step in height scale
+
+     -25   = literal value 25%
+     -50   = literal value 50%
+     -75   = literal value 75%
+     -100  = literal value 100%
+
+     -auto = string value of auto
+     -inherit = string value of inherit
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+/* Height Scale */
+
+.he1 { height: 1rem; }
+.he2 { height: 2rem; }
+.he3 { height: 3rem; }
+.he4 { height: 4rem; }
+.he5 { height: 5rem; }
+
+/* Height Percentages - Based off of height of parent */
+
+.he-25 {  height:  25%; }
+.he-50 {  height:  50%; }
+.he-75 {  height:  75%; }
+.he-100 { height: 100%; }
+
+.min-he-100 { min-height: 100%; }
+
+/* Screen Height Percentage */
+
+.vh-25 {  height:  25vh; }
+.vh-50 {  height:  50vh; }
+.vh-75 {  height:  75vh; }
+.vh-100 { height: 100vh; }
+
+.min-vh-100 { min-height: 100vh; }
+
+
+/* String Properties */
+
+.he-auto {     height: auto; }
+.he-inherit {  height: inherit; }
+
+@include min-width(medium_phone) {
+  .he1-ns {  height: 1rem; }
+  .he2-ns {  height: 2rem; }
+  .he3-ns {  height: 3rem; }
+  .he4-ns {  height: 4rem; }
+  .he5-ns {  height: 5rem; }
+  .he-25-ns { height: 25%; }
+  .he-50-ns { height: 50%; }
+  .he-75-ns { height: 75%; }
+  .he-100-ns { height: 100%; }
+  .min-he-100-ns { min-height: 100%; }
+  .vh-25-ns {  height:  25vh; }
+  .vh-50-ns {  height:  50vh; }
+  .vh-75-ns {  height:  75vh; }
+  .vh-100-ns { height: 100vh; }
+  .min-vh-100-ns { min-height: 100vh; }
+  .he-auto-ns { height: auto; }
+  .he-inherit-ns { height: inherit; }
+}
+
+@include min-width(medium_tablet) {
+  .he1-m { height: 1rem; }
+  .he2-m { height: 2rem; }
+  .he3-m { height: 3rem; }
+  .he4-m { height: 4rem; }
+  .he5-m { height: 5rem; }
+  .he-25-m { height: 25%; }
+  .he-50-m { height: 50%; }
+  .he-75-m { height: 75%; }
+  .he-100-m { height: 100%; }
+  .min-he-100-ns { min-height: 100%; }
+  .vh-25-m {  height:  25vh; }
+  .vh-50-m {  height:  50vh; }
+  .vh-75-m {  height:  75vh; }
+  .vh-100-m { height: 100vh; }
+  .min-vh-100-m { min-height: 100vh; }
+  .he-auto-m { height: auto; }
+  .he-inherit-m { height: inherit; }
+}
+
+@include min-width(desktop) {
+  .he1-l { height: 1rem; }
+  .he2-l { height: 2rem; }
+  .he3-l { height: 3rem; }
+  .he4-l { height: 4rem; }
+  .he5-l { height: 5rem; }
+  .he-25-l { height: 25%; }
+  .he-50-l { height: 50%; }
+  .he-75-l { height: 75%; }
+  .he-100-l { height: 100%; }
+  .min-he-100-l { min-height: 100%; }
+  .vh-25-l {  height:  25vh; }
+  .vh-50-l {  height:  50vh; }
+  .vh-75-l {  height:  75vh; }
+  .vh-100-l { height: 100vh; }
+  .min-vh-100-l { min-height: 100vh; }
+  .he-auto-l { height: auto; }
+  .he-inherit-l { height: inherit; }
+}
