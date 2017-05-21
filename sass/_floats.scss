@@ -37,19 +37,19 @@
 .fr { float: right; _display: inline; }
 .fn { float: none; }
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .fl-ns { float: left; _display: inline; }
   .fr-ns { float: right; _display: inline; }
   .fn-ns { float: none; }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .fl-m { float: left; _display: inline; }
   .fr-m { float: right; _display: inline; }
   .fn-m { float: none; }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .fl-l { float: left; _display: inline; }
   .fr-l { float: right; _display: inline; }
   .fn-l { float: none; }

@@ -31,21 +31,21 @@
 .ttu { text-transform: uppercase; }
 .ttn { text-transform: none; }
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .ttc-ns { text-transform: capitalize; }
   .ttl-ns { text-transform: lowercase; }
   .ttu-ns { text-transform: uppercase; }
   .ttn-ns { text-transform: none; }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .ttc-m { text-transform: capitalize; }
   .ttl-m { text-transform: lowercase; }
   .ttu-m { text-transform: uppercase; }
   .ttn-m { text-transform: none; }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .ttc-l { text-transform: capitalize; }
   .ttl-l { text-transform: lowercase; }
   .ttu-l { text-transform: uppercase; }

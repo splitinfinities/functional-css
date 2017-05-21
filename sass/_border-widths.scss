@@ -41,7 +41,7 @@
 .bb-0 { border-bottom-width: 0; }
 .bl-0 { border-left-width: 0; }
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .bw0-ns { border-width: 0; }
   .bw1-ns { border-width: .125rem; }
   .bw2-ns { border-width: .25rem; }
@@ -54,7 +54,7 @@
   .bl-0-ns { border-left-width: 0; }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .bw0-m { border-width: 0; }
   .bw1-m { border-width: .125rem; }
   .bw2-m { border-width: .25rem; }
@@ -67,7 +67,7 @@
   .bl-0-m { border-left-width: 0; }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .bw0-l { border-width: 0; }
   .bw1-l { border-width: .125rem; }
   .bw2-l { border-width: .25rem; }

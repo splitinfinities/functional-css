@@ -23,19 +23,19 @@
 .no-underline { text-decoration: none; }
 
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .strike-ns       { text-decoration: line-through; }
   .underline-ns    { text-decoration: underline; }
   .no-underline-ns { text-decoration: none; }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .strike-m       { text-decoration: line-through; }
   .underline-m    { text-decoration: underline; }
   .no-underline-m { text-decoration: none; }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .strike-l       { text-decoration: line-through; }
   .underline-l {    text-decoration: underline; }
   .no-underline-l { text-decoration: none; }

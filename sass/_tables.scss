@@ -17,15 +17,26 @@
     border-spacing: 0;
 }
 
-.striped--gray15:nth-child(odd) {
-  background-color: $gray15;
+.striped--light-silver:nth-child(odd) {
+  background-color: $light-silver;
 }
 
-
-.striped--gray5:nth-child(odd) {
-  background-color: $gray5;
+.striped--moon-gray:nth-child(odd) {
+  background-color: $moon-gray;
 }
 
-.striped--gray2:nth-child(odd) {
-  background-color: $gray2;
+.striped--light-gray:nth-child(odd) {
+  background-color: $light-gray;
+}
+
+.striped--near-white:nth-child(odd) {
+  background-color: $near-white;
+}
+
+.stripe-light:nth-child(odd) {
+  background-color: $white-10;
+}
+
+.stripe-dark:nth-child(odd) {
+  background-color: $black-10;
 }

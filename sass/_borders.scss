@@ -36,7 +36,7 @@
   .bn { border-style: none; border-width: 0; }
 
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .ba-ns { border-style: solid; border-width: 1px; }
   .bt-ns { border-top-style: solid; border-top-width: 1px; }
   .br-ns { border-right-style: solid; border-right-width: 1px; }
@@ -45,7 +45,7 @@
   .bn-ns { border-style: none; border-width: 0; }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .ba-m { border-style: solid; border-width: 1px; }
   .bt-m { border-top-style: solid; border-top-width: 1px; }
   .br-m { border-right-style: solid; border-right-width: 1px; }
@@ -54,7 +54,7 @@
   .bn-m { border-style: none; border-width: 0; }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .ba-l { border-style: solid; border-width: 1px; }
   .bt-l { border-top-style: solid; border-top-width: 1px; }
   .br-l { border-right-style: solid; border-right-width: 1px; }

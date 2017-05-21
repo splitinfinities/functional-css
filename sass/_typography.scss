@@ -58,7 +58,8 @@
   word-break: break-all;
 }
 
-@include min-width(medium_phone) {
+
+@media #{$breakpoint-not-small} {
   .measure-ns  {
     max-width: 30em;
   }
@@ -83,7 +84,7 @@
   }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .measure-m {
     max-width: 30em;
   }
@@ -108,7 +109,7 @@
   }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .measure-l {
     max-width: 30em;
   }

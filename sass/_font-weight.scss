@@ -44,7 +44,7 @@
 .fw9    { font-weight: 900; }
 
 
-@include min-width(medium_phone) {
+@media #{$breakpoint-not-small} {
   .normal-ns { font-weight: normal; }
   .b-ns      { font-weight: bold; }
   .fw1-ns    { font-weight: 100; }
@@ -58,7 +58,7 @@
   .fw9-ns    { font-weight: 900; }
 }
 
-@include min-width(medium_tablet) {
+@media #{$breakpoint-medium} {
   .normal-m { font-weight: normal; }
   .b-m      { font-weight: bold; }
   .fw1-m    { font-weight: 100; }
@@ -72,7 +72,7 @@
   .fw9-m    { font-weight: 900; }
 }
 
-@include min-width(desktop) {
+@media #{$breakpoint-large} {
   .normal-l { font-weight: normal; }
   .b-l      { font-weight: bold; }
   .fw1-l    { font-weight: 100; }

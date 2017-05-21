@@ -25,70 +25,70 @@
 
 */
 
+.b--black {        border-color: $black; }
+.b--near-black {   border-color: $near-black; }
+.b--dark-gray {    border-color: $dark-gray; }
+.b--mid-gray {     border-color: $mid-gray; }
+.b--gray {         border-color: $gray; }
+.b--silver {       border-color: $silver; }
+.b--light-silver { border-color: $light-silver; }
+.b--moon-gray {    border-color: $moon-gray; }
+.b--light-gray {   border-color: $light-gray; }
+.b--near-white {   border-color: $near-white; }
+.b--white {        border-color: $white; }
 
+.b--white-90 {   border-color: $white-90; }
+.b--white-80 {   border-color: $white-80; }
+.b--white-70 {   border-color: $white-70; }
+.b--white-60 {   border-color: $white-60; }
+.b--white-50 {   border-color: $white-50; }
+.b--white-40 {   border-color: $white-40; }
+.b--white-30 {   border-color: $white-30; }
+.b--white-20 {   border-color: $white-20; }
+.b--white-10 {   border-color: $white-10; }
+.b--white-05 {   border-color: $white-05; }
+.b--white-025 {   border-color: $white-025; }
+.b--white-0125 {   border-color: $white-0125; }
 
-// White
-.b--white { border-color: $white; }
+.b--black-90 {   border-color: $black-90; }
+.b--black-80 {   border-color: $black-80; }
+.b--black-70 {   border-color: $black-70; }
+.b--black-60 {   border-color: $black-60; }
+.b--black-50 {   border-color: $black-50; }
+.b--black-40 {   border-color: $black-40; }
+.b--black-30 {   border-color: $black-30; }
+.b--black-20 {   border-color: $black-20; }
+.b--black-10 {   border-color: $black-10; }
+.b--black-05 {   border-color: $black-05; }
+.b--black-025 {   border-color: $black-025; }
+.b--black-0125 {   border-color: $black-0125; }
 
-// Gray
-.b--gray { border-color: $gray; }
-.b--gray-dark { border-color: $gray-dark; }
-.b--gray-dark50 { border-color: $gray-dark50; }
-.b--gray75 { border-color: $gray75; }
-.b--gray25 { border-color: $gray25; }
-.b--gray15 { border-color: $gray15; }
-.b--gray5 { border-color: $gray5; }
-.b--gray2 { border-color: $gray2; }
-
-// Blue
-.b--blue { border-color: $blue; }
-.b--blue-dark { border-color: $blue-dark; }
-.b--blue-dark50 { border-color: $blue-dark50; }
-.b--blue75 { border-color: $blue75; }
-.b--blue25 { border-color: $blue25; }
-.b--blue5 { border-color: $blue5; }
-
-// Green
-.b--green { border-color: $green; }
-.b--green-dark { border-color: $green-dark; }
-.b--green-dark50 { border-color: $green-dark50; }
-.b--green75 { border-color: $green75; }
-.b--green25 { border-color: $green25; }
-.b--green2 { border-color: $green2; }
-
-// Yellow
-.b--yellow { border-color: $yellow; }
-.b--yellow-dark { border-color: $yellow-dark; }
-.b--yellow-dark50 { border-color: $yellow-dark50; }
-.b--yellow75 { border-color: $yellow75; }
-.b--yellow25 { border-color: $yellow25; }
-
-// Orange
-.b--orange { border-color: $orange; }
-.b--orange-dark { border-color: $orange-dark; }
-.b--orange-dark50 { border-color: $orange-dark50; }
-.b--orange-75 { border-color: $orange75; }
-.b--orange-25 { border-color: $orange25; }
-
-// Red
+.b--dark-red { border-color: $dark-red; }
 .b--red { border-color: $red; }
-.b--red-dark { border-color: $red-dark; }
-.b--red-dark50 { border-color: $red-dark50; }
-.b--red75 { border-color: $red75; }
-.b--red25 { border-color: $red25; }
-
-// Pink
-.b--pink { border-color: $pink; }
-.b--pink-dark { border-color: $pink-dark; }
-.b--pink-dark50 { border-color: $pink-dark50; }
-.b--pink75 { border-color: $pink75; }
-.b--pink25 { border-color: $pink25; }
-
-// Purple
+.b--light-red { border-color: $light-red; }
+.b--orange { border-color: $orange; }
+.b--gold { border-color: $gold; }
+.b--yellow { border-color: $yellow; }
+.b--light-yellow { border-color: $light-yellow; }
 .b--purple { border-color: $purple; }
-.b--purple-dark { border-color: $purple-dark; }
-.b--purple-dark50 { border-color: $purple-dark50; }
-.b--purple75 { border-color: $purple75; }
-.b--purple25 { border-color: $purple25; }
+.b--light-purple { border-color: $light-purple; }
+.b--dark-pink { border-color: $dark-pink; }
+.b--hot-pink { border-color: $hot-pink; }
+.b--pink { border-color: $pink; }
+.b--light-pink { border-color: $light-pink; }
+.b--dark-green { border-color: $dark-green; }
+.b--green { border-color: $green; }
+.b--light-green { border-color: $light-green; }
+.b--navy { border-color: $navy; }
+.b--dark-blue { border-color: $dark-blue; }
+.b--blue { border-color: $blue; }
+.b--light-blue { border-color: $light-blue; }
+.b--lightest-blue { border-color: $lightest-blue; }
+.b--washed-blue { border-color: $washed-blue; }
+.b--washed-green { border-color: $washed-green; }
+.b--washed-yellow { border-color: $washed-yellow; }
+.b--washed-red { border-color: $washed-red; }
 
 .b--transparent { border-color: $transparent; }
+.b--inherit { border-color: inherit; }
+.b--current { border-color: currentColor; }

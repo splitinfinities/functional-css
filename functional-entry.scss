@@ -23,15 +23,15 @@
 //
 //
 
-//  External Library Includes
-@import 'sass/variables';
-@import 'sass/mixins';
 
+//  External Library Includes
 @import 'sass/normalize';
 
 
 //  Variables
 //  Importing here will allow you to override any variables in the modules
+@import 'sass/variables';
+@import 'sass/mixins';
 @import 'sass/colors';
 @import 'sass/media-queries';
 
@@ -42,9 +42,8 @@
 //  Uncomment out the line below to help debug layout issues
 //  @import 'sass/debug';
 
-@import 'sass/kitchensink';
-
 //  Modules
+@import 'sass/box-sizing';
 @import 'sass/aspect-ratios';
 @import 'sass/images';
 @import 'sass/background-size';
@@ -95,8 +94,6 @@
 @import 'sass/vertical-align';
 @import 'sass/hovers';
 @import 'sass/z-index';
-
 @import 'sass/relationships';
-@import 'sass/prism';
-
-@import 'sass/style';
+@import 'sass/nested';
+@import 'sass/styles';
